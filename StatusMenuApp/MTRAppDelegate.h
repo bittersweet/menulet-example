@@ -14,6 +14,8 @@
     NSStatusItem *statusItem;
 }
 
+-(IBAction)openAlert:(id)sender;
+
 @property (assign) IBOutlet NSWindow *window;
 
 @end
