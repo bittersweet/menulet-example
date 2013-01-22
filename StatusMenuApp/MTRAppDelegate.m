@@ -20,7 +20,8 @@
     statusItem = [[NSStatusBar systemStatusBar]
                   statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu: statusMenu];
-    [statusItem setTitle:@"Status"];
+    NSImage *image = [NSImage imageNamed:@"logo"];
+    [statusItem setImage:image];
     [statusItem setHighlightMode:YES];
 }
 
