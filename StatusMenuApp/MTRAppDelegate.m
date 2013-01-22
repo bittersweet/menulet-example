@@ -12,7 +12,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    // override
+}
+
+- (void)awakeFromNib
+{
+    statusItem = [[NSStatusBar systemStatusBar]
+                  statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setMenu: statusMenu];
+    [statusItem setTitle:@"Status"];
+    [statusItem setHighlightMode:YES];
 }
 
 @end

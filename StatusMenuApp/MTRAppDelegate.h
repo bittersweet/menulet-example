@@ -8,7 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MTRAppDelegate : NSObject <NSApplicationDelegate>
+@interface MTRAppDelegate : NSObject {
+    NSWindow *window;
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem *statusItem;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
